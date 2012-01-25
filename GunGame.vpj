@@ -1,0 +1,119 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+	Version="10.0"
+	VendorName="SlickEdit"
+	WorkingDir=".">
+	<Config
+		Name="Release"
+		OutputFile=""
+		CompilerConfigName="">
+		<Menu>
+			<Target
+				Name="Compile"
+				MenuCaption="&amp;Compile"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveCurrent"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Rebuild"
+				MenuCaption="&amp;Rebuild"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Debug"
+				MenuCaption="&amp;Debug"
+				SaveOption="SaveNone"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Execute"
+				MenuCaption="E&amp;xecute"
+				SaveOption="SaveNone"
+				RunFromDir="%rw">
+				<Exec CmdLine='".exe"'/>
+			</Target>
+		</Menu>
+	</Config>
+	<Files>
+		<Folder
+			Name="Source Files"
+			Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d">
+			<F N="../gungame-source/gungame/commands.sp"/>
+			<F N="../gungame-source/gungame/config.sp"/>
+			<F N="../gungame-source/gungame_stats/config.sp"/>
+			<F N="../gungame-source/gungame/debug.sp"/>
+			<F N="../gungame-source/gungame/event.sp"/>
+			<F N="../gungame-source/gungame.sp"/>
+			<F N="../gungame-source/gungame_afk.sp"/>
+			<F N="../gungame-source/gungame_bot.sp"/>
+			<F N="../gungame-source/gungame_config.sp"/>
+			<F N="../gungame-source/gungame_display_winner.sp"/>
+			<F N="../gungame-source/gungame_logging.sp"/>
+			<F N="../gungame-source/gungame_mapvoting.sp"/>
+			<F N="../gungame-source/gungame_stats.sp"/>
+			<F N="../gungame-source/gungame_tk.sp"/>
+			<F N="../gungame-source/gungame/hacks.sp"/>
+			<F N="../gungame-source/gungame/keyvalue.sp"/>
+			<F N="../gungame-source/gungame_stats/keyvalues.sp"/>
+			<F N="../gungame-source/gungame/menu.sp"/>
+			<F N="../gungame-source/gungame_stats/menu.sp"/>
+			<F N="../gungame-source/gungame/natives.sp"/>
+			<F N="../gungame-source/gungame_stats/natives.sp"/>
+			<F N="../gungame-source/gungame/offset.sp"/>
+			<F N="../gungame-source/gungame_stats/ranks.sp"/>
+			<F N="../gungame-source/gungame_stats/sql.sp"/>
+			<F N="../gungame-source/gungame/util.sp"/>
+		</Folder>
+		<Folder
+			Name="Header Files"
+			Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.inc;*.sh;*.cpy;*.if">
+			<F N="../gungame-source/include/colors.inc"/>
+			<F N="../gungame-source/gungame/config.h"/>
+			<F N="../gungame-source/gungame_stats/config.h"/>
+			<F N="../gungame-source/gungame/debug.h"/>
+			<F N="../gungame-source/gungame/event.h"/>
+			<F N="../gungame-source/gungame/gungame.h"/>
+			<F N="../gungame-source/include/gungame.inc"/>
+			<F N="../gungame-source/include/gungame_config.inc"/>
+			<F N="../gungame-source/include/gungame_const.inc"/>
+			<F N="../gungame-source/gungame_stats/gungame_stats.h"/>
+			<F N="../gungame-source/include/gungame_stats.inc"/>
+			<F N="../gungame-source/gungame/hacks.h"/>
+			<F N="../gungame-source/gungame/keyvalue.h"/>
+			<F N="../gungame-source/gungame_stats/keyvalues.h"/>
+			<F N="../gungame-source/include/langutils.inc"/>
+			<F N="../gungame-source/gungame/menu.h"/>
+			<F N="../gungame-source/gungame_stats/menu.h"/>
+			<F N="../gungame-source/gungame/offset.h"/>
+			<F N="../gungame-source/gungame_stats/ranks.h"/>
+			<F N="../gungame-source/gungame_stats/sql.h"/>
+			<F N="../gungame-source/include/url.inc"/>
+			<F N="../gungame-source/gungame/util.h"/>
+		</Folder>
+		<Folder
+			Name="Resource Files"
+			Filters="*.ico;*.cur;*.dlg"/>
+		<Folder
+			Name="Bitmaps"
+			Filters="*.bmp"/>
+		<Folder
+			Name="Other Files"
+			Filters="">
+			<F N="../gungame-source/compile_gungame.cmd"/>
+		</Folder>
+	</Files>
+</Project>

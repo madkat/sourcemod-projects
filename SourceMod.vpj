@@ -1,0 +1,231 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+	Version="10.0"
+	VendorName="SlickEdit"
+	WorkingDir=".">
+	<Config
+		Name="Release"
+		OutputFile=""
+		CompilerConfigName="">
+		<Menu>
+			<Target
+				Name="Compile"
+				MenuCaption="&amp;Compile"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveCurrent"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%p"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="compile.bat"/>
+			</Target>
+			<Target
+				Name="Rebuild"
+				MenuCaption="&amp;Rebuild"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Debug"
+				MenuCaption="&amp;Debug"
+				SaveOption="SaveNone"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Execute"
+				MenuCaption="E&amp;xecute"
+				SaveOption="SaveNone"
+				RunFromDir="%rw">
+				<Exec CmdLine='".exe"'/>
+			</Target>
+		</Menu>
+	</Config>
+	<Files>
+		<Folder
+			Name="Source Files"
+			Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d">
+			<F N="../sourcemod-compiler/admin-flatfile/admin-flatfile.sp"/>
+			<F N="../sourcemod-compiler/admin-flatfile/admin-groups.sp"/>
+			<F N="../sourcemod-compiler/admin-flatfile/admin-overrides.sp"/>
+			<F N="../sourcemod-compiler/admin-flatfile/admin-simple.sp"/>
+			<F N="../sourcemod-compiler/admin-sql-prefetch.sp"/>
+			<F N="../sourcemod-compiler/admin-sql-threaded.sp"/>
+			<F N="../sourcemod-compiler/admin-flatfile/admin-users.sp"/>
+			<F N="../sourcemod-compiler/include/admin.inc"/>
+			<F N="../sourcemod-compiler/adminhelp.sp"/>
+			<F N="../sourcemod-compiler/include/adminmenu.inc"/>
+			<F N="../sourcemod-compiler/adminmenu.sp"/>
+			<F N="../sourcemod-compiler/include/adt.inc"/>
+			<F N="../sourcemod-compiler/include/adt_array.inc"/>
+			<F N="../sourcemod-compiler/include/adt_stack.inc"/>
+			<F N="../sourcemod-compiler/include/adt_trie.inc"/>
+			<F N="../sourcemod-compiler/antiflood.sp"/>
+			<F N="../sourcemod-compiler/include/smlib/arrays.inc"/>
+			<F N="../sourcemod-compiler/basebans/ban.sp"/>
+			<F N="../sourcemod-compiler/include/banning.inc"/>
+			<F N="../sourcemod-compiler/basebans.sp"/>
+			<F N="../sourcemod-compiler/basechat.sp"/>
+			<F N="../sourcemod-compiler/include/basecomm.inc"/>
+			<F N="../sourcemod-compiler/basecomm.sp"/>
+			<F N="../sourcemod-compiler/basecommands.sp"/>
+			<F N="../sourcemod-compiler/basetriggers.sp"/>
+			<F N="../sourcemod-compiler/basevotes.sp"/>
+			<F N="../sourcemod-compiler/funcommands/beacon.sp"/>
+			<F N="../sourcemod-compiler/testsuite/benchmark.sp"/>
+			<F N="../sourcemod-compiler/include/bitbuffer.inc"/>
+			<F N="../sourcemod-compiler/funcommands/blind.sp"/>
+			<F N="../sourcemod-compiler/testsuite/bug4059.sp"/>
+			<F N="../sourcemod-compiler/testsuite/callfunctest.sp"/>
+			<F N="../sourcemod-compiler/basecommands/cancelvote.sp"/>
+			<F N="../sourcemod-compiler/testsuite/capstest.sp"/>
+			<F N="../sourcemod-compiler/include/clientprefs.inc"/>
+			<F N="../sourcemod-compiler/clientprefs.sp"/>
+			<F N="../sourcemod-compiler/testsuite/clientprefstest.sp"/>
+			<F N="../sourcemod-compiler/include/clients.inc"/>
+			<F N="../sourcemod-compiler/include/smlib/clients.inc"/>
+			<F N="../sourcemod-compiler/include/smlib/colors.inc"/>
+			<F N="../sourcemod-compiler/include/commandfilters.inc"/>
+			<F N="../sourcemod-compiler/include/smlib/concommands.inc"/>
+			<F N="../sourcemod-compiler/include/console.inc"/>
+			<F N="../sourcemod-compiler/include/smlib/convars.inc"/>
+			<F N="../sourcemod-compiler/include/core.inc"/>
+			<F N="../sourcemod-compiler/include/smlib/crypt.inc"/>
+			<F N="../sourcemod-compiler/include/cstrike.inc"/>
+			<F N="../sourcemod-compiler/include/datapack.inc"/>
+			<F N="../sourcemod-compiler/include/dbi.inc"/>
+			<F N="../sourcemod-compiler/include/smlib/debug.inc"/>
+			<F N="../sourcemod-compiler/funcommands/drug.sp"/>
+			<F N="../sourcemod-compiler/adminmenu/dynamicmenu.sp"/>
+			<F N="../sourcemod-compiler/include/smlib/dynarrays.inc"/>
+			<F N="../sourcemod-compiler/include/smlib/edicts.inc"/>
+			<F N="../sourcemod-compiler/include/smlib/effects.inc"/>
+			<F N="../sourcemod-compiler/include/smlib/entities.inc"/>
+			<F N="../sourcemod-compiler/include/entity.inc"/>
+			<F N="../sourcemod-compiler/include/entity_prop_stocks.inc"/>
+			<F N="../sourcemod-compiler/testsuite/entpropelements.sp"/>
+			<F N="../sourcemod-compiler/include/events.inc"/>
+			<F N="../sourcemod-compiler/basecommands/execcfg.sp"/>
+			<F N="../sourcemod-compiler/testsuite/fakenative1.sp"/>
+			<F N="../sourcemod-compiler/testsuite/fakenative2.sp"/>
+			<F N="../sourcemod-compiler/include/files.inc"/>
+			<F N="../sourcemod-compiler/include/smlib/files.inc"/>
+			<F N="../sourcemod-compiler/testsuite/filetest.sp"/>
+			<F N="../sourcemod-compiler/funcommands/fire.sp"/>
+			<F N="../sourcemod-compiler/include/float.inc"/>
+			<F N="../sourcemod-compiler/funcommands.sp"/>
+			<F N="../sourcemod-compiler/include/functions.inc"/>
+			<F N="../sourcemod-compiler/funvotes.sp"/>
+			<F N="../sourcemod-compiler/testsuite/fwdtest1.sp"/>
+			<F N="../sourcemod-compiler/testsuite/fwdtest2.sp"/>
+			<F N="../sourcemod-compiler/basecomm/gag.sp"/>
+			<F N="../sourcemod-compiler/include/smlib/game.inc"/>
+			<F N="../sourcemod-compiler/testsuite/gamerules-props.sp"/>
+			<F N="../sourcemod-compiler/include/smlib/general.inc"/>
+			<F N="../sourcemod-compiler/include/geoip.inc"/>
+			<F N="../sourcemod-compiler/testsuite/goto_test.sp"/>
+			<F N="../sourcemod-compiler/funcommands/gravity.sp"/>
+			<F N="../sourcemod-compiler/include/halflife.inc"/>
+			<F N="../sourcemod-compiler/include/handles.inc"/>
+			<F N="../sourcemod-compiler/include/helpers.inc"/>
+			<F N="../sourcemod-compiler/funcommands/ice.sp"/>
+			<F N="../sourcemod-compiler/include/keyvalues.inc"/>
+			<F N="../sourcemod-compiler/basecommands/kick.sp"/>
+			<F N="../sourcemod-compiler/include/lang.inc"/>
+			<F N="../sourcemod-compiler/include/logging.inc"/>
+			<F N="../sourcemod-compiler/basecommands/map.sp"/>
+			<F N="../sourcemod-compiler/include/mapchooser.inc"/>
+			<F N="../sourcemod-compiler/mapchooser.sp"/>
+			<F N="../sourcemod-compiler/include/smlib/math.inc"/>
+			<F N="../sourcemod-compiler/include/menus.inc"/>
+			<F N="../sourcemod-compiler/basecomm/natives.sp"/>
+			<F N="../sourcemod-compiler/include/nextmap.inc"/>
+			<F N="../sourcemod-compiler/nextmap.sp"/>
+			<F N="../sourcemod-compiler/funcommands/noclip.sp"/>
+			<F N="../sourcemod-compiler/nominations.sp"/>
+			<F N="../sourcemod-compiler/testsuite/outputtest.sp"/>
+			<F N="../sourcemod-compiler/playercommands.sp"/>
+			<F N="../sourcemod-compiler/include/profiler.inc"/>
+			<F N="../sourcemod-compiler/testsuite/ptstest.sp"/>
+			<F N="../sourcemod-compiler/randomcycle.sp"/>
+			<F N="../sourcemod-compiler/include/regex.inc"/>
+			<F N="../sourcemod-compiler/basecommands/reloadadmins.sp"/>
+			<F N="../sourcemod-compiler/playercommands/rename.sp"/>
+			<F N="../sourcemod-compiler/reservedslots.sp"/>
+			<F N="../sourcemod-compiler/rockthevote.sp"/>
+			<F N="../sourcemod-compiler/include/sdktools.inc"/>
+			<F N="../sourcemod-compiler/include/sdktools_client.inc"/>
+			<F N="../sourcemod-compiler/include/sdktools_engine.inc"/>
+			<F N="../sourcemod-compiler/include/sdktools_entinput.inc"/>
+			<F N="../sourcemod-compiler/include/sdktools_entoutput.inc"/>
+			<F N="../sourcemod-compiler/include/sdktools_functions.inc"/>
+			<F N="../sourcemod-compiler/include/sdktools_gamerules.inc"/>
+			<F N="../sourcemod-compiler/include/sdktools_hooks.inc"/>
+			<F N="../sourcemod-compiler/include/sdktools_sound.inc"/>
+			<F N="../sourcemod-compiler/include/sdktools_stocks.inc"/>
+			<F N="../sourcemod-compiler/include/sdktools_stringtables.inc"/>
+			<F N="../sourcemod-compiler/include/sdktools_tempents.inc"/>
+			<F N="../sourcemod-compiler/include/sdktools_tempents_stocks.inc"/>
+			<F N="../sourcemod-compiler/include/sdktools_trace.inc"/>
+			<F N="../sourcemod-compiler/include/sdktools_voice.inc"/>
+			<F N="../sourcemod-compiler/include/smlib/server.inc"/>
+			<F N="../sourcemod-compiler/playercommands/slap.sp"/>
+			<F N="../sourcemod-compiler/playercommands/slay.sp"/>
+			<F N="../sourcemod-compiler/include/smlib.inc"/>
+			<F N="../sourcemod-compiler/include/sorting.inc"/>
+			<F N="../sourcemod-compiler/testsuite/sorttest.sp"/>
+			<F N="../sourcemod-compiler/sounds.sp"/>
+			<F N="../sourcemod-compiler/include/sourcemod.inc"/>
+			<F N="../sourcemod-compiler/sql-admin-manager.sp"/>
+			<F N="../sourcemod-compiler/include/smlib/sql.inc"/>
+			<F N="../sourcemod-compiler/testsuite/sqltest.sp"/>
+			<F N="../sourcemod-compiler/testsuite/stacktest.sp"/>
+			<F N="../sourcemod-compiler/include/string.inc"/>
+			<F N="../sourcemod-compiler/include/smlib/strings.inc"/>
+			<F N="../sourcemod-compiler/testsuite/structtest.sp"/>
+			<F N="../sourcemod-compiler/include/smlib/teams.inc"/>
+			<F N="../sourcemod-compiler/include/textparse.inc"/>
+			<F N="../sourcemod-compiler/testsuite/tf2-test.sp"/>
+			<F N="../sourcemod-compiler/include/tf2.inc"/>
+			<F N="../sourcemod-compiler/include/tf2_stocks.inc"/>
+			<F N="../sourcemod-compiler/funcommands/timebomb.sp"/>
+			<F N="../sourcemod-compiler/include/timers.inc"/>
+			<F N="../sourcemod-compiler/include/topmenus.inc"/>
+			<F N="../sourcemod-compiler/include/usermessages.inc"/>
+			<F N="../sourcemod-compiler/include/vector.inc"/>
+			<F N="../sourcemod-compiler/include/smlib/vehicles.inc"/>
+			<F N="../sourcemod-compiler/include/version.inc"/>
+			<F N="../sourcemod-compiler/funvotes/votealltalk.sp"/>
+			<F N="../sourcemod-compiler/basevotes/voteban.sp"/>
+			<F N="../sourcemod-compiler/funvotes/voteburn.sp"/>
+			<F N="../sourcemod-compiler/funvotes/voteff.sp"/>
+			<F N="../sourcemod-compiler/funvotes/votegravity.sp"/>
+			<F N="../sourcemod-compiler/basevotes/votekick.sp"/>
+			<F N="../sourcemod-compiler/basevotes/votemap.sp"/>
+			<F N="../sourcemod-compiler/funvotes/voteslay.sp"/>
+			<F N="../sourcemod-compiler/include/smlib/weapons.inc"/>
+			<F N="../sourcemod-compiler/basecommands/who.sp"/>
+			<F N="../sourcemod-compiler/include/smlib/world.inc"/>
+		</Folder>
+		<Folder
+			Name="Header Files"
+			Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.inc;*.sh;*.cpy;*.if"/>
+		<Folder
+			Name="Resource Files"
+			Filters="*.ico;*.cur;*.dlg"/>
+		<Folder
+			Name="Bitmaps"
+			Filters="*.bmp"/>
+		<Folder
+			Name="Other Files"
+			Filters=""/>
+	</Files>
+</Project>
