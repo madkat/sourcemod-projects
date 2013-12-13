@@ -1,245 +1,60 @@
 [Global]
-CurrentProject=SourceMod.vpj
+CurrentProject=pvkii-testmod.vpj
 [ProjectDates]
-SourceMod.vpj=20120124230546544
-GunGame.vpj=20120124161512197
-pvkii-weaponsmaster.vpj=20120124234126244
-pvkii-randomizer.vpj=20120124162421017
+GunGame.vpj=20131210213351268
+pvkii-randomizer.vpj=20131210213351284
+pvkii-weaponsmaster.vpj=20131210213351286
+SourceMod.vpj=20131210213351270
+pvkii-testmod.vpj=20131212232123134
 [ActiveConfig]
 SourceMod.vpj=Release
 GunGame.vpj=Release
 pvkii-weaponsmaster.vpj=Release
 pvkii-randomizer.vpj=Release
+pvkii-testmod.vpj=Release
 [TreeExpansion2]
-- GunGame.vpj
-  + Source Files
-    - ..\gungame-source\gungame\commands.sp
-    - ..\gungame-source\gungame\config.sp
-    - ..\gungame-source\gungame_stats\config.sp
-    - ..\gungame-source\gungame\debug.sp
-    - ..\gungame-source\gungame\event.sp
-    - ..\gungame-source\gungame.sp
-    - ..\gungame-source\gungame_afk.sp
-    - ..\gungame-source\gungame_bot.sp
-    - ..\gungame-source\gungame_config.sp
-    - ..\gungame-source\gungame_display_winner.sp
-    - ..\gungame-source\gungame_logging.sp
-    - ..\gungame-source\gungame_mapvoting.sp
-    - ..\gungame-source\gungame_stats.sp
-    - ..\gungame-source\gungame_tk.sp
-    - ..\gungame-source\gungame\hacks.sp
-    - ..\gungame-source\gungame\keyvalue.sp
-    - ..\gungame-source\gungame_stats\keyvalues.sp
-    - ..\gungame-source\gungame\menu.sp
-    - ..\gungame-source\gungame_stats\menu.sp
-    - ..\gungame-source\gungame\natives.sp
-    - ..\gungame-source\gungame_stats\natives.sp
-    - ..\gungame-source\gungame\offset.sp
-    - ..\gungame-source\gungame_stats\ranks.sp
-    - ..\gungame-source\gungame_stats\sql.sp
-    - ..\gungame-source\gungame\util.sp
-  + Header Files
-    - ..\gungame-source\include\colors.inc
-    - ..\gungame-source\gungame\config.h
-    - ..\gungame-source\gungame_stats\config.h
-    - ..\gungame-source\gungame\debug.h
-    - ..\gungame-source\gungame\event.h
-    - ..\gungame-source\gungame\gungame.h
-    - ..\gungame-source\include\gungame.inc
-    - ..\gungame-source\include\gungame_config.inc
-    - ..\gungame-source\include\gungame_const.inc
-    - ..\gungame-source\gungame_stats\gungame_stats.h
-    - ..\gungame-source\include\gungame_stats.inc
-    - ..\gungame-source\gungame\hacks.h
-    - ..\gungame-source\gungame\keyvalue.h
-    - ..\gungame-source\gungame_stats\keyvalues.h
-    - ..\gungame-source\include\langutils.inc
-    - ..\gungame-source\gungame\menu.h
-    - ..\gungame-source\gungame_stats\menu.h
-    - ..\gungame-source\gungame\offset.h
-    - ..\gungame-source\gungame_stats\ranks.h
-    - ..\gungame-source\gungame_stats\sql.h
-    - ..\gungame-source\include\url.inc
-    - ..\gungame-source\gungame\util.h
++@ GunGame.vpj
++@ pvkii-randomizer.vpj
+-@ pvkii-testmod.vpj
+  - Source Files
+  - Header Files
   - Resource Files
-  + Bitmaps
-  + Other Files
-    - ..\gungame-source\compile_gungame.cmd
-- pvkii-weaponsmaster.vpj
-  + Source Files
-  + Header Files
+  - Bitmaps
+  - Other Files
+-@ pvkii-weaponsmaster.vpj
+  - Source Files
+  - Header Files
   + Resource Files
   + Bitmaps
   - Other Files
-    - ..\sourcemod-pvkii-weaponsmaster\README.markdown
-    - ..\sourcemod-pvkii-weaponsmaster\weaponsmaster.cfg.txt
-    - ..\sourcemod-pvkii-weaponsmaster\WeaponsMaster.sp
-    - ..\sourcemod-pvkii-weaponsmaster\wm_config.sp
-    - ..\sourcemod-pvkii-weaponsmaster\wm_weapondata.sp
-  - sounds
-    - ..\sourcemod-pvkii-weaponsmaster\sounds\smb3_1-up.wav
-    - ..\sourcemod-pvkii-weaponsmaster\sounds\smb3_powerdown.wav
-    - ..\sourcemod-pvkii-weaponsmaster\sounds\smb3_powerup.wav
-    - ..\sourcemod-pvkii-weaponsmaster\sounds\smb_star.mp3
-    - ..\sourcemod-pvkii-weaponsmaster\sounds\smb_warning2.mp3
-    - ..\sourcemod-pvkii-weaponsmaster\sounds\welcome2.mp3
-- SourceMod.vpj
-  + Source Files
-    - ..\sourcemod-compiler\admin-flatfile\admin-flatfile.sp
-    - ..\sourcemod-compiler\admin-flatfile\admin-groups.sp
-    - ..\sourcemod-compiler\admin-flatfile\admin-overrides.sp
-    - ..\sourcemod-compiler\admin-flatfile\admin-simple.sp
-    - ..\sourcemod-compiler\admin-sql-prefetch.sp
-    - ..\sourcemod-compiler\admin-sql-threaded.sp
-    - ..\sourcemod-compiler\admin-flatfile\admin-users.sp
-    - ..\sourcemod-compiler\include\admin.inc
-    - ..\sourcemod-compiler\adminhelp.sp
-    - ..\sourcemod-compiler\include\adminmenu.inc
-    - ..\sourcemod-compiler\adminmenu.sp
-    - ..\sourcemod-compiler\include\adt.inc
-    - ..\sourcemod-compiler\include\adt_array.inc
-    - ..\sourcemod-compiler\include\adt_stack.inc
-    - ..\sourcemod-compiler\include\adt_trie.inc
-    - ..\sourcemod-compiler\antiflood.sp
-    - ..\sourcemod-compiler\basebans\ban.sp
-    - ..\sourcemod-compiler\include\banning.inc
-    - ..\sourcemod-compiler\basebans.sp
-    - ..\sourcemod-compiler\basechat.sp
-    - ..\sourcemod-compiler\include\basecomm.inc
-    - ..\sourcemod-compiler\basecomm.sp
-    - ..\sourcemod-compiler\basecommands.sp
-    - ..\sourcemod-compiler\basetriggers.sp
-    - ..\sourcemod-compiler\basevotes.sp
-    - ..\sourcemod-compiler\funcommands\beacon.sp
-    - ..\sourcemod-compiler\testsuite\benchmark.sp
-    - ..\sourcemod-compiler\include\bitbuffer.inc
-    - ..\sourcemod-compiler\funcommands\blind.sp
-    - ..\sourcemod-compiler\testsuite\bug4059.sp
-    - ..\sourcemod-compiler\testsuite\callfunctest.sp
-    - ..\sourcemod-compiler\basecommands\cancelvote.sp
-    - ..\sourcemod-compiler\testsuite\capstest.sp
-    - ..\sourcemod-compiler\include\clientprefs.inc
-    - ..\sourcemod-compiler\clientprefs.sp
-    - ..\sourcemod-compiler\testsuite\clientprefstest.sp
-    - ..\sourcemod-compiler\include\clients.inc
-    - ..\sourcemod-compiler\include\commandfilters.inc
-    - ..\sourcemod-compiler\include\console.inc
-    - ..\sourcemod-compiler\include\core.inc
-    - ..\sourcemod-compiler\include\cstrike.inc
-    - ..\sourcemod-compiler\include\datapack.inc
-    - ..\sourcemod-compiler\include\dbi.inc
-    - ..\sourcemod-compiler\funcommands\drug.sp
-    - ..\sourcemod-compiler\adminmenu\dynamicmenu.sp
-    - ..\sourcemod-compiler\include\entity.inc
-    - ..\sourcemod-compiler\include\entity_prop_stocks.inc
-    - ..\sourcemod-compiler\testsuite\entpropelements.sp
-    - ..\sourcemod-compiler\include\events.inc
-    - ..\sourcemod-compiler\basecommands\execcfg.sp
-    - ..\sourcemod-compiler\testsuite\fakenative1.sp
-    - ..\sourcemod-compiler\testsuite\fakenative2.sp
-    - ..\sourcemod-compiler\include\files.inc
-    - ..\sourcemod-compiler\testsuite\filetest.sp
-    - ..\sourcemod-compiler\funcommands\fire.sp
-    - ..\sourcemod-compiler\include\float.inc
-    - ..\sourcemod-compiler\funcommands.sp
-    - ..\sourcemod-compiler\include\functions.inc
-    - ..\sourcemod-compiler\funvotes.sp
-    - ..\sourcemod-compiler\testsuite\fwdtest1.sp
-    - ..\sourcemod-compiler\testsuite\fwdtest2.sp
-    - ..\sourcemod-compiler\basecomm\gag.sp
-    - ..\sourcemod-compiler\testsuite\gamerules-props.sp
-    - ..\sourcemod-compiler\include\geoip.inc
-    - ..\sourcemod-compiler\testsuite\goto_test.sp
-    - ..\sourcemod-compiler\funcommands\gravity.sp
-    - ..\sourcemod-compiler\include\halflife.inc
-    - ..\sourcemod-compiler\include\handles.inc
-    - ..\sourcemod-compiler\include\helpers.inc
-    - ..\sourcemod-compiler\funcommands\ice.sp
-    - ..\sourcemod-compiler\include\keyvalues.inc
-    - ..\sourcemod-compiler\basecommands\kick.sp
-    - ..\sourcemod-compiler\include\lang.inc
-    - ..\sourcemod-compiler\include\logging.inc
-    - ..\sourcemod-compiler\basecommands\map.sp
-    - ..\sourcemod-compiler\include\mapchooser.inc
-    - ..\sourcemod-compiler\mapchooser.sp
-    - ..\sourcemod-compiler\include\menus.inc
-    - ..\sourcemod-compiler\basecomm\natives.sp
-    - ..\sourcemod-compiler\include\nextmap.inc
-    - ..\sourcemod-compiler\nextmap.sp
-    - ..\sourcemod-compiler\funcommands\noclip.sp
-    - ..\sourcemod-compiler\nominations.sp
-    - ..\sourcemod-compiler\testsuite\outputtest.sp
-    - ..\sourcemod-compiler\playercommands.sp
-    - ..\sourcemod-compiler\include\profiler.inc
-    - ..\sourcemod-compiler\testsuite\ptstest.sp
-    - ..\sourcemod-compiler\randomcycle.sp
-    - ..\sourcemod-compiler\include\regex.inc
-    - ..\sourcemod-compiler\basecommands\reloadadmins.sp
-    - ..\sourcemod-compiler\playercommands\rename.sp
-    - ..\sourcemod-compiler\reservedslots.sp
-    - ..\sourcemod-compiler\rockthevote.sp
-    - ..\sourcemod-compiler\include\sdktools.inc
-    - ..\sourcemod-compiler\include\sdktools_client.inc
-    - ..\sourcemod-compiler\include\sdktools_engine.inc
-    - ..\sourcemod-compiler\include\sdktools_entinput.inc
-    - ..\sourcemod-compiler\include\sdktools_entoutput.inc
-    - ..\sourcemod-compiler\include\sdktools_functions.inc
-    - ..\sourcemod-compiler\include\sdktools_gamerules.inc
-    - ..\sourcemod-compiler\include\sdktools_hooks.inc
-    - ..\sourcemod-compiler\include\sdktools_sound.inc
-    - ..\sourcemod-compiler\include\sdktools_stocks.inc
-    - ..\sourcemod-compiler\include\sdktools_stringtables.inc
-    - ..\sourcemod-compiler\include\sdktools_tempents.inc
-    - ..\sourcemod-compiler\include\sdktools_tempents_stocks.inc
-    - ..\sourcemod-compiler\include\sdktools_trace.inc
-    - ..\sourcemod-compiler\include\sdktools_voice.inc
-    - ..\sourcemod-compiler\playercommands\slap.sp
-    - ..\sourcemod-compiler\playercommands\slay.sp
-    - ..\sourcemod-compiler\include\sorting.inc
-    - ..\sourcemod-compiler\testsuite\sorttest.sp
-    - ..\sourcemod-compiler\sounds.sp
-    - ..\sourcemod-compiler\include\sourcemod.inc
-    - ..\sourcemod-compiler\sql-admin-manager.sp
-    - ..\sourcemod-compiler\testsuite\sqltest.sp
-    - ..\sourcemod-compiler\testsuite\stacktest.sp
-    - ..\sourcemod-compiler\include\string.inc
-    - ..\sourcemod-compiler\testsuite\structtest.sp
-    - ..\sourcemod-compiler\include\textparse.inc
-    - ..\sourcemod-compiler\testsuite\tf2-test.sp
-    - ..\sourcemod-compiler\include\tf2.inc
-    - ..\sourcemod-compiler\include\tf2_stocks.inc
-    - ..\sourcemod-compiler\funcommands\timebomb.sp
-    - ..\sourcemod-compiler\include\timers.inc
-    - ..\sourcemod-compiler\include\topmenus.inc
-    - ..\sourcemod-compiler\include\usermessages.inc
-    - ..\sourcemod-compiler\include\vector.inc
-    - ..\sourcemod-compiler\include\version.inc
-    - ..\sourcemod-compiler\funvotes\votealltalk.sp
-    - ..\sourcemod-compiler\basevotes\voteban.sp
-    - ..\sourcemod-compiler\funvotes\voteburn.sp
-    - ..\sourcemod-compiler\funvotes\voteff.sp
-    - ..\sourcemod-compiler\funvotes\votegravity.sp
-    - ..\sourcemod-compiler\basevotes\votekick.sp
-    - ..\sourcemod-compiler\basevotes\votemap.sp
-    - ..\sourcemod-compiler\funvotes\voteslay.sp
-    - ..\sourcemod-compiler\basecommands\who.sp
-  - Header Files
-  - Resource Files
-  + Bitmaps
-  - Other Files
+  + sounds
++@ SourceMod.vpj
 scroll:0
 [State]
-SCREEN: 1920 1200 0 0 1135 909 0 0 M 0 0 0 0 1527 673 0
+SCREEN: 1920 1200 383 82 463 769 0 0 M 0 0 0 0 1571 653 0
 CWD: ..\sourcemod-projects
+BUFFER: BN="..\sourcemod-pvkii-testmod\TestMod.sp"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=1 ST=8 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=120652384 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=5 BI=17 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="..\sourcemod-pvkii-testmod\tm_sdk.h"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=8 IN=1 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Plain Text	HM=0 MF=50331656 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.510 CL=44 LE=0 CX=44 CY=10 WI=5 BI=20 HT=0 HN=0 HF=0 HC=4
+WINDOW: 1 22 1569 630 0 0 N  WF=0 WT=3 ",,," DID=0
+BUFFER: BN="..\sourcemod-pvkii-testmod\TestMod.sp"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=161 BI=17 HT=0 HN=0 HF=0 HC=4
+WINDOW: 1 22 1569 630 0 0 N  WF=0 WT=6 ",,," DID=0
+BUFFER: BN="..\sourcemod-pvkii-testmod\tm_sdk.h"
+VIEW: LN=.1172 CL=1 LE=0 CX=1 CY=18 WI=169 BI=20 HT=0 HN=0 HF=0 HC=4
+MDISTATE: 1
+AAAAAAAAAAHaAAAAAAAAAFkAAAd/AAAEROoAAAAC+gAAAAIAAAACAAAAAQAAAAD6AAAAAgAAAAIAAAABAAAAAPwAAABaADMAOgA6ADoAQwA6AFwAZwBpAHQAXABzAG8AdQByAGMAZQBtAG8AZAAtAHAAdgBrAGkAaQAtAHQAZQBzAHQAbQBvAGQAXABUAGUAcwB0AE0AbwBkAC4AcwBwAAD/////AAD8AAAAVgA2ADoAOgA6AEMAOgBcAGcAaQB0AFwAcwBvAHUAcgBjAGUAbQBvAGQALQBwAHYAawBpAGkALQB0AGUAcwB0AG0AbwBkAFwAdABtAF8AcwBkAGsALgBoAQD/////AAE=
 FILEHIST: 9
-\Users\Lewism\Downloads\pvkii\WeaponsMaster.sp
-\Users\Lewism\Downloads\superlogs-pvkii.sp
-..\sourcemod-pvkii-weaponsmaster\WeaponsMaster.sp
-\Users\Lewism\AppData\Local\Temp\Temp1_sm_gungame-1.1.9.1.zip\addons\sourcemod\scripting\gungame.sp
-\Users\Lewism\Downloads\sm_gungame-1.1.9.1\addons\sourcemod\scripting\gungame.sp
-\Users\Lewism\AppData\Local\Temp\Temp1_sm_gungame-1.1.9.1.zip\addons\sourcemod\scripting\gungame\util.sp
 \Users\Lewism\Downloads\sm_gungame-1.1.9.1\addons\sourcemod\scripting\gungame\gungame.h
 \Users\Lewism\Downloads\sm_gungame-1.1.9.1\addons\sourcemod\scripting\gungame\event.sp
 \Users\Lewism\Downloads\sm_gungame-1.1.9.1\addons\sourcemod\scripting\gungame\util.sp
-PROJECT_CACHE: 0
+..\sourcemod-pvkii-weaponsmaster\WeaponsMaster.sp
+..\sourcemod-pvkii-weaponsmaster\weaponsmaster.h
+..\sourcemod-pvkii-testmod\TestMod.sp
+..\sourcemod-pvkii-testmod\tm_sdk.sp
+..\sourcemod-pvkii-weaponsmaster\weaponsmaster.cfg.txt
+..\sourcemod-pvkii-testmod\tm_sdk.h
 TBCLASS: 0 0
